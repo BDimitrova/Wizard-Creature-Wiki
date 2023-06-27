@@ -54,9 +54,9 @@
 }
 
 .PG,
-.card-keyword,
-.card-date,
-.card-location {
+.card-species,
+.card-skin,
+.card-eye {
     color: rgb(223, 210, 210);
     padding: 8px;
     font-weight: bold;
@@ -85,7 +85,6 @@
 .social-btn>.edit-btn,
 .del-btn,
 .vote-up,
-.vote-down,
 .thanks-for-vote {
     color: black;
     font-weight: bold;
