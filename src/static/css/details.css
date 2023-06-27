@@ -41,7 +41,7 @@
     border-radius: 2px;
 }
 
-.card_animal {
+.card_character {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -64,6 +64,7 @@
 }
 
 .PG {
+    /*background: #92FE9D;*/
     background: rgba(116, 153, 226, 0.89);
     -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
@@ -86,13 +87,15 @@
 .vote-up,
 .vote-down,
 .thanks-for-vote {
-    color: #fff;
+    color: black;
+    font-weight: bold;
     border: none;
     padding: 14px;
     outline: none;
     font-size: 18px;
     font-weight: 600;
     margin-top: 40px;
+    margin-left: 10px;
     border-radius: 12px;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -102,28 +105,21 @@
 }
 
 .del-btn {
-    background-color: #88B04B;
+    background-color: #C6AC8F;
 }
 
 .edit-btn {
-    background-color: #EFC050;
+    background-color: #C6AC8F;
 }
 
 .vote-up {
-    background-color: #9B2335;
+    background-color: #C6AC8F;
 }
 
 .thanks-for-vote {
     width: 185px;
-    background-color: rgba(116, 153, 226, 0.89);
-}
-
-.get-statistics {
-    background-color: darksalmon;
-}
-
-.vote-down {
-    background-color: #5B5EA6;
+    font-weight: bold;
+    background-color: #EAE0D5;
 }
 
 .edit-btn:hover,
@@ -133,28 +129,6 @@
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-.play_btn {
-    height: 100%;
-    margin: -394px auto;
-    position: relative;
-    text-align: center;
-    background: rgba(0, 244, 170, 0.4);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
-}
-
-.fa-play-circle {
-    color: #255;
-    font-size: 160px;
-    margin-top: 110px;
-    -webkit-animation: bounce 1.0s -0.4s infinite;
-    animation: bounce 1.0s -0.4s infinite;
-}
-
-.fa-play-circle:hover {
-    color: aqua;
-    animation: bounce 0.4s infinite;
 }
 
 @-webkit-keyframes bounce {
@@ -203,7 +177,7 @@
     width: 100%;
 }
 
-.card :hover {
+.card:hover {
     top: -2px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
@@ -273,7 +247,8 @@ span {
 }
 
 .PV {
-    background: #9B2335;
+    color: black;
+    background: #EAE0D5;
     -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     -webkit-transition: 300ms ease-in-out;
