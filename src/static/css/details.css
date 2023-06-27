@@ -272,11 +272,3 @@ span {
     margin-left: 10px;
 }
 
-@media (min-width: 60em) {
-    .item-1 {
-        grid-column: 1 / span 2;
-    }
-    .item-1>h1 {
-        font-size: 24px;
-    }
-}

@@ -1,4 +1,4 @@
-@media (max-height:800px) {
+@media (max-height:1200px) {
     html {
         font-size: 12px;
     }
@@ -8,22 +8,6 @@
     section {
         margin: 1rem 3em;
     }
-    /*footer {
-        display: none;
-    }*/
+    
 }
 
-@media (max-width: 980px) {
-    html {
-        font-size: 12px;
-    }
-    header {
-        margin-top: 0.5em;
-    }
-    section {
-        margin: 1rem 3em;
-    }
-    /*footer {
-        display: none;
-    }*/
-}
