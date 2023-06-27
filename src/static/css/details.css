@@ -129,32 +129,6 @@
     transform: scale(1.1);
 }
 
-@-webkit-keyframes bounce {
-    8% {
-        transform: scale(0.3);
-        -webkit-transform: scale(0.8);
-        opacity: 1;
-    }
-    10% {
-        transform: scale(1.8);
-        -webkit-transform: scale2;
-        opacity: 0;
-    }
-}
-
-@keyframes bounce {
-    8% {
-        transform: scale(0.3);
-        -webkit-transform: scale(0.8);
-        opacity: 1;
-    }
-    20% {
-        transform: scale(1.8);
-        -webkit-transform: scale2;
-        opacity: 0;
-    }
-}
-
 .card {
     margin-left: 4em;
     width: 420px;

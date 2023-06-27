@@ -4,7 +4,7 @@
 }
 
 .loginSection {
-    background: url(https://i.pinimg.com/564x/77/de/58/77de58eafbd419c9b9b34b95793f541a.jpg);
+    background: url(../img/form-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,7 +20,7 @@
 }
 
 .signupSection {
-    background: url(https://i.pinimg.com/564x/77/de/58/77de58eafbd419c9b9b34b95793f541a.jpg);
+    background: url(../img/form-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
