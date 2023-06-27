@@ -68,7 +68,6 @@
     background: rgba(116, 153, 226, 0.89);
     -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-    -webkit-transition: 300ms ease-in-out;
 }
 
 .disc {
@@ -250,7 +249,6 @@ span {
     background: #EAE0D5;
     -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-    -webkit-transition: 300ms ease-in-out;
     font-size: 18px;
 }
 
@@ -259,7 +257,6 @@ span {
     -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     font-size: 18.5px;
-    -webkit-transition: 300ms ease-in-out;
 }
 
 .PV,
