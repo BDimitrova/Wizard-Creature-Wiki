@@ -41,14 +41,6 @@
     border-radius: 2px;
 }
 
-
-/*
-.card_right {
-    max-width: 250px;
-    border-radius: 2px;
-}
-*/
-
 .card_animal {
     width: 100%;
     display: -webkit-box;
@@ -72,7 +64,6 @@
 }
 
 .PG {
-    /*background: #92FE9D;*/
     background: rgba(116, 153, 226, 0.89);
     -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
@@ -102,7 +93,6 @@
     font-size: 18px;
     font-weight: 600;
     margin-top: 40px;
-    /*margin-left: 10px;*/
     border-radius: 12px;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
