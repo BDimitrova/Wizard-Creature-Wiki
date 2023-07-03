@@ -1,18 +1,22 @@
 const mongoose = require('mongoose');
 
-let animalSchema = new mongoose.Schema({
+let creaturesSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
         minLength: 2,
     },
-    years: {
-        type: Number,
+    species: {
+        type: String,
         required: true,
-        minValue: 1,
-        maxValue: 100,
+        minLength: 3,
     },
-    kind: {
+    skinColor: {
+        type: String,
+        required: true,
+        minLength: 3,
+    },
+    eyeColor: {
         type: String,
         required: true,
         minLength: 3,
@@ -22,41 +26,29 @@ let animalSchema = new mongoose.Schema({
         required: true,
         validate: /^https?:\/\//i
     },
-    need: {
+    description: {
         type: String,
         required: true,
         minLength: 3,
         maxLength: 100,
     },
-    location: {
-        type: String,
-        required: true,
-        minLength: 5,
-        maxLength: 15,
-    },
-    description: {
-        type: String,
-        required: true,
-        minLength: 5,
-        maxLength: 50,
-    },
     owner: {
         type: mongoose.Types.ObjectId,
         ref: 'User'
     },
-    donation: [
+    voted: [
         {
             type: mongoose.Types.ObjectId,
             ref: 'User',
         }
     ],
 
-}, { timestamps: true });
+});
 
-animalSchema.method('getDonation', function () {
-    return this.donation.map(x => x._id);
+creaturesSchema.method('getVoted', function () {
+    return this.voted.map(x => x._id);
 })
 
-let Animals = mongoose.model('Animals', animalSchema);
+let Creatures = mongoose.model('Creatures', creaturesSchema);
 
-module.exports = Animals;
+module.exports = Creatures;
