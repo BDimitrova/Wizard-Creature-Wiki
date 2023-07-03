@@ -30,7 +30,7 @@ let creaturesSchema = new mongoose.Schema({
         type: String,
         required: true,
         minLength: 3,
-        maxLength: 100,
+        maxLength: 500,
     },
     owner: {
         type: mongoose.Types.ObjectId,
