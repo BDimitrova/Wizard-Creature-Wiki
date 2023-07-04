@@ -64,4 +64,15 @@ async function checkIsOwner(req, res, next) {
     }
 };
 
+router.get('/:id/delete', checkIsOwner, async (req, res) => {
+    try {
+        await creaturesServices.delete(req.params.id);
+
+        res.redirect('/creatures/all-posts');
+    } catch (error) {
+        res.render('creatures/all-posts', { error: getErrorMessage(error) });
+    }
+
+});
+
 module.exports = router;
