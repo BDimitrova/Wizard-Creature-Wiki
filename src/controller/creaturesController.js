@@ -32,4 +32,36 @@ function getErrorMessage(error) {
     }
 
 }
+
+router.get('/:id/details', async (req, res) => {
+    let creatures = await creaturesServices.getOne(req.params.id);
+    let creaturesData = await creatures.toObject();
+
+    let isOwner = creaturesData.owner == req.user?._id;
+    let voted = creatures.getVoted();
+    let isVoted = req.user && voted.some(c => c._id == req.user?._id);
+
+    res.render('creatures/details', { ...creaturesData, isOwner, isVoted })
+});
+
+async function isOwner(req, res, next) {
+    let creatures = await creaturesServices.getOne(req.params.id);
+
+    if (creatures.owner == req.user._id) {
+        res.redirect(`/creatures/${req.params.id}/details`);
+    } else {
+        next();
+    }
+}
+
+async function checkIsOwner(req, res, next) {
+    let creatures = await creaturesServices.getOne(req.params.id);
+
+    if (creatures.owner == req.user._id) {
+        next();
+    } else {
+        res.redirect(`/creatures/${req.params.id}/details`);
+    }
+};
+
 module.exports = router;
