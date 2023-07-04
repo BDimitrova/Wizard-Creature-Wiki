@@ -10,5 +10,5 @@ router.use('/creatures', creaturesController);
 router.use('/*', (req, res) => {
     res.render('404');
 });
-
+router.use('/profile', homeController);
 module.exports = router;
