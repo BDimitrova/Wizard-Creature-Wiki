@@ -7,12 +7,12 @@ const userSchema = new mongoose.Schema({
     firstName: {
         type: String,
         require: true,
-        minLength: 2,
+        minLength: 3,
     },
     lastName: {
         type: String,
         require: true,
-        minLength: 2,
+        minLength: 3,
     },
     email: {
         type: String,

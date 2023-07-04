@@ -17,7 +17,7 @@ router.post('/login', isGuest, async (req, res) => {
         res.cookie(AUTH_COOKIE_NAME, token);
         res.redirect('/');
     } catch (error) {
-        res.render('auth/login', console.log(error));
+        res.render('auth/login', { error: error.message });
     }
 
 });
