@@ -5,7 +5,9 @@
         <div class="my-container">
             <!-- If there are own posts in the database display each of them -->
             {{#if creatures}}
-                {{> profile-card}}
+                {{#each creatures}}
+                    {{> profile-card}}
+                {{/each}}
             {{else}}
             <!-- If there are still no own posts in the database display: -->
             <div class="no-posts">

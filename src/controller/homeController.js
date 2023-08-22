@@ -6,9 +6,13 @@ router.get('/', (req, res) => {
 });
 
 router.get('/profile', async (req, res) => {
-    let creatures = await creaturesServices.getMyCreatedPost(req.user._id);
-    console.log(creatures);
-    res.render('my-posts', {creatures})
+    let userId = req.user._id;
+
+    let creatures = await creaturesServices.getMyCreatedPost(userId);
+    let owner = await creaturesServices.findOwner(userId);
+    console.log(owner);
+
+    res.render('my-posts', { creatures, owner })
 })
 
 module.exports = router;
